@@ -1,0 +1,134 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-size: 20px;
+}
+
+a {
+  color: inherit;
+}
+
+ul,
+ol {
+  list-style-type: none;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.main-list {
+  margin: 20px;
+}
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 24px;
+  max-width: 1128px;
+  margin: 0 auto;
+}
+
+.gallery img {
+  width: 360px;
+  height: 200px;
+  cursor: pointer;
+}
+
+.feedback-form {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+}
+.feedback-form label {
+  margin-bottom: 8px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #2e2f42;
+}
+.feedback-form label:nth-child(2) {
+  margin-bottom: 16px;
+}
+.feedback-form input {
+  display: block;
+  margin-top: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding: 8px 16px;
+  outline: none;
+  transition: border-color 0.3s linear, border-radius 0.3s linear;
+}
+
+textarea {
+  display: block;
+  margin-top: 8px;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 100px;
+  padding: 8px 16px;
+  outline: none;
+  resize: none;
+  transition: border-color 0.3s linear, border-radius 0.3s linear;
+}
+
+textarea:focus {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+
+.feedback-form input:focus {
+  border: 1px solid #000;
+  border-radius: 4px;
+}
+.feedback-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+
+.feedback-form button {
+  border-radius: 8px;
+  padding: 8px 16px;
+  width: 86px;
+  height: 40px;
+  background: #4e75ff;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  color: #fff;
+  border: none;
+  transition: background-color 0.3s linear;
+  cursor: pointer;
+}
+.feedback-form button:hover {
+  background-color: #6c8cff;
+}
